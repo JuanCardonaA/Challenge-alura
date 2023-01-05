@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZri-PqHOk6pCEDTXFUJVL88X71Cfoo5afBPIAJGoIYKefJawbMsZUrz-lrsOJwHTa5_0&usqp=CAU">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id="img-alura" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ326hcI2tA6SP1pFxFdK6aBMULsxfqA37NlBiWBiqYixX2rNOsmsv2K0bCQtPjbrFA_ts&usqp=CAU" alt="">
+        <div id="header-alura">
+            <h1>Encriptador de texto</h1>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="container-inicio">
+            <label for="encriptador" id="texto-encriptador">Ingrese el texto</label>
+            <textarea cols="30" rows="11" id="encriptador" placeholder ="Escriba aquí"></textarea>
+
+            <div class="container-buttons">
+                <span id="texto-button"><p><i class='bx bx-error-circle icon'></i>Solo letras minúsculas y sin acentos</p></span>
+                <div class="buttons">
+                    <button id="button1" onfocus="ocultar()">Encriptar</button>
+                    <button id="button2" onfocus="ocultar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="linea"></div>
+        
+        <section class="container-resultado">
+                <div id="myDIV">
+                    <img id="img-resultado" src="https://img.freepik.com/vector-premium/buscar-bot-estilo-dibujos-animados-inteligencia-artificial-vector-isometrico-ilustracion-vectorial_194782-1438.jpg?w=2000" alt="">
+                    <div class="texto-encriptar">
+                        <h2>Ningún mensaje fue <br> enviado</h2>
+                    </div>
+                </div>
+                <textarea id="encriptar" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar" disabled></textarea>
+                <button id="button3" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <section class="footer-container">
+            <div class="datos-p">
+                <h2>Elaborado por:</h2>
+                <p><span id="texto-datos">Nombre:</span> Juan Esteban Cardona Arias</p>
+                <p><span id="texto-datos">Correo:</span> juancarona12@gmail.com</p>
+                <p><span id="texto-datos">Formación:</span> Desarrollo Front-End</p>
+
+            </div>
+            <div class="redes-p">
+                <h2> Redes Sociales</h2>
+                <div class="iconos">
+                <a href="#" id="facebook"><i class='bx bxl-facebook-circle' ></i> Facebook</a>
+                <a href="#" id="whatsapp"><i class='bx bxl-whatsapp' ></i> Whatsapp</a>
+                <a href="#" id="git"><i class='bx bxl-github'></i> Github</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

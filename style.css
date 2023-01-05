@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', cursive;
+}
+
+body{
+    background-color: rgba(5, 8, 41, 0.959);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#header-alura{
+    width: 80%;
+    margin-top: 1rem ;
+}
+
+h1{
+    text-align: center;
+    color: rgb(243, 241, 241);
+    text-shadow: 0 0 5px black;
+    font-size: 35px;
+
+}
+
+
+#img-alura{
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    box-shadow:  0 0px 10px rgb(0, 0, 0);
+    margin-top: 0.5rem ;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    vertical-align: top;
+    margin-top: 2rem;
+    column-gap: 1rem;
+}
+
+ /* inicio */
+
+.container-inicio{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    row-gap: 1.5rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    margin-right: -4rem;
+
+}
+
+.linea{
+    margin-top: 1.6rem;
+    width: 2px;
+    height: 480px;
+    background-color: white;
+    margin-right: 3.5rem;
+}
+
+.container-inicio #texto-encriptador{
+    font-size: 25px;
+    color: rgb(243, 241, 241);
+    text-align: justify;
+    font-weight: bold;
+}
+
+#encriptador::placeholder{
+    color: black;
+}
+
+#encriptador:focus::placeholder{
+    opacity: 0;
+}
+
+
+#encriptador{
+    width: 80%;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0 0 10px black;
+    resize: none;
+}
+
+.container-buttons{
+    position: absolute;
+    bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-button{
+    font-size: 12px;
+    color: white; 
+    margin-bottom: 10px;
+}
+
+
+.icon{
+    font-size: 14px;
+    color: white;
+    margin-right: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+#button1, #button2{
+    padding: 10px;
+    width: auto;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 15px 0 15px 0;
+    font-weight: bold;
+}
+
+#button1{
+    background-color:rgb(14, 14, 78);
+    color: white;
+    box-shadow: 0 0 10px black;
+    border: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+
+}
+
+#button1:hover{
+    background-color: white;
+    color: rgb(9, 9, 61) ;
+    border: 2px solid rgb(14, 14, 78);
+    cursor: pointer;
+}
+
+#button2{
+    color:rgb(14, 14, 78);
+    border: 2px solid rgb(14, 14, 78);
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease-in-out;
+}
+
+#button2:hover{
+    background-color: rgb(14, 14, 78);
+    color: white ;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+
+
+
+/*contenedor para encriptar */
+
+.container-resultado{
+    margin-top: 1rem;
+    background-color: white;
+    width: 32%;
+    height: 500px;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0 0 15px black , inset 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+    padding: 0 30px;
+}
+
+#myDIV{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+}
+
+#img-resultado{
+    width: 200px;
+    height: 180px;
+    display: block;
+    margin: 4rem auto 2rem;
+}
+
+
+.texto-encriptar{
+    text-align: center;
+}
+
+.texto-encriptar h2{
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+#encriptar{
+    outline: none;
+    border: none;
+    margin: 2rem auto 0 ;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    background:none;
+    resize: none;
+    text-align: center;
+    width: 100%;
+}
+
+#encriptar::placeholder{
+    color: black;
+}
+
+#encriptar:focus::placeholder{
+    opacity: 0;
+}
+
+
+#button3{
+    color:rgb(14, 14, 78);
+    border: 2px solid rgb(14, 14, 78);
+    box-shadow: 0 0 10px black;
+    padding: 8px;
+    width: 10%;
+    font-size: 18px;
+    border-radius: 15px 0 15px 0;
+    font-weight: bold;
+    position: absolute;
+    bottom: 40px;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+#button3:hover{
+    cursor: pointer;
+    background-color:rgb(14, 14, 78) ;
+    color: white;
+    box-shadow: 0 0 10px black;
+    border: 2px solid white;
+}
+
+footer{
+    width: 100%;
+    box-shadow: 0 0 10px;
+    background: white;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.footer-container{
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.datos-p{
+    line-height: 25px;
+}
+
+.datos-p h2{
+    margin-bottom: 10px;
+}
+
+.datos-p p::before{
+    content: "✪";
+    margin-right: 5px;
+    font-weight: bold
+}
+
+.datos-p #texto-datos{
+    font-weight: bold;
+}
+
+.redes-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-p h2{
+    margin-bottom: 25px;
+}
+
+.redes-p .iconos{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2rem;
+}
+
+.redes-p #facebook, #whatsapp, #git{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+.redes-p #facebook:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+.redes-p #whatsapp:hover{
+    color: rgb(19, 185, 19);
+    transform: scale(1.2);
+}
+
+.redes-p #git:hover{
+    transform: scale(1.2);
+    color: rgb(80, 82, 80);
+}
+
