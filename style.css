@@ -343,11 +343,11 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 820px;
+        height: auto;
 
     }
     .container-inicio{
-        margin: 2rem auto 0 auto;
+        margin: 1rem auto 0 auto;
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
@@ -361,7 +361,6 @@ footer{
 
     #encriptador{
         width: 600px;
-        margin-bottom: 4rem;
     }
 
     #texto-button p{
@@ -370,9 +369,7 @@ footer{
 
     .container-buttons{
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 35px;
-        bottom: 1rem;
+       position: initial;
 
     }
 
@@ -382,8 +379,9 @@ footer{
     }
     .linea{
         width: 90%;
-        height: 2px;
-        margin: auto;
+        height: 4px;
+        background: white;
+        margin: 1rem auto;
     }
 
     .container-resultado{
@@ -401,12 +399,9 @@ footer{
         margin: 3rem auto 0 auto;
     }
 
-    .texto-encriptar h2{
-        margin-bottom: 20px;
-    }
 
     #encriptar{
-        margin: 2.5rem auto 0 auto;
+        margin: 2rem auto 0 auto;
     }
 
     .container-resultado #button3{
@@ -438,6 +433,7 @@ footer{
     header{
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -455,7 +451,7 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 1000px;
+        height: auto;
     }
 
     .container-inicio{
@@ -485,7 +481,16 @@ footer{
 
     }
 
+    .iconos{
+        align-items: center;
+        display: flex;
+        
+    }
+
     .iconos  #facebook, #git, #whatsapp{
         font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
